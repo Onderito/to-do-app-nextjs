@@ -36,10 +36,10 @@ export default function ToDoApp() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    handleClick(e);
+    handleClick();
   };
 
-  const handleClick = (e: any) => {
+  const handleClick = () => {
     if (inputValue === "") {
       setIsAlertVisible(true);
       setTimeout(() => {
@@ -91,7 +91,7 @@ export default function ToDoApp() {
             className="absolute overflow-hidden top-10 left-10 text-white font-manrope bg-white/5 rounded-lg p-3 border-1 border-[#EB6F6F] max-w-sm"
           >
             <h4 className="font-bold text-center text-lg ">
-              Don't leave it empty — take action!
+              Don&apos;t leave it empty — take action!
             </h4>
             <p className="font-regular text-center mt-1 text-sm">
               Write down just one small task and start moving.
