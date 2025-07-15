@@ -12,8 +12,6 @@ interface task {
   text: string;
   completed: boolean;
 }
-// je type mon interface task, ici j'ai un id pour différencier chaque task, un text,
-// et un boolean pour savoir si ma task est faite ou non
 
 export default function ToDoApp() {
   const [inputValue, setInputValue] = useState("");
